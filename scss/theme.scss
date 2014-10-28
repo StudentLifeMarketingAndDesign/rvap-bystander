@@ -1,0 +1,480 @@
+/* Base styles
+========================================================================== */
+html {
+	font-size: $base-font-size;
+	line-height: 1.6;
+}
+body {
+	background: #fff url(../images/bg.png);
+	color: #444;
+	font-family: $body-font;
+	margin: 0;
+	padding: 0;
+}
+
+/* Layout
+========================================================================== */
+.container {
+	max-width: $break-large;
+	margin-right: auto;
+	margin-left: auto;
+	padding-left: 1em;
+	padding-right: 1em;
+}
+section {
+	padding: 100px 0;
+}
+
+/* Header
+========================================================================== */
+.title {
+	color: $orange;
+	font-size: 40px;
+	margin: 0;
+	@media (min-width: $break-medium) {
+		font-size: 80px;
+	}
+	@media (min-width: $break-large) {
+		font-size: 130px;
+	}
+}
+
+
+/* Navigation
+========================================================================== */
+.main-nav {
+
+}
+.main-nav ul {
+	list-style:none;
+	margin:0;
+	padding:0;
+}
+.main-nav ul li {
+	display:inline-block;
+	text-align:center;
+}
+.main-nav li a {
+	text-decoration:none;
+	font-family: 'Amatic SC', cursive;
+	font-size:40px;
+	color:black;
+	text-align:center;
+}
+
+/* Scenarios
+========================================================================== */
+.section-title {
+	font-size: 60px;
+	margin: 0;
+	text-align: center;
+}
+.scenario-1 {
+	background-color: #6fcde3;
+}
+.scenario-2 {
+	background-color: #a8dcd8;
+}
+.scenario-3 {
+	background-color: #f2852f;
+}
+
+/* Footer
+========================================================================== */
+.circle{
+	float:left;
+	width:300px;
+	margin:0 10px;
+	background-color:#6fcde3;
+	padding:40px;
+	border:10px solid #f2852f;
+	border-radius:50%;
+	height:300px;
+	text-align:center;
+	display:inline;
+}
+
+
+
+// .factanswer {
+// 	width:202px;
+// 	text-align:center;
+// 	font-size:18px;
+// }
+// .paddingbottom{
+// 	padding-bottom:100px;
+// }
+// .answerwidth{
+// 	width:262px;
+// 	text-align:center;
+// }
+// .marginleft{
+// 	margin-left:90px;
+// 	float:left;
+// }
+// .marginmiddle{
+// 	margin-left:170px;
+// 	float:left;
+// }
+// .marginright{
+// 	margin-right:90px;
+// 	float:right;
+// }
+// .factleft{
+// 	margin-left:45px;
+// 	margin-top: 70px;
+// 	float:left;
+// }
+// .factmiddle{
+// 	margin-left:235px;
+// 	margin-top: 70px;
+// 	float:left;
+// }
+// .factright{
+// 	margin-right:165px;
+// 	margin-top: 90px;
+// 	float:right;
+// }
+// .infoleft{
+// 	margin-left:60px;
+// 	margin-top: 115px;
+// 	float:left;
+// 	line-height:2.0
+// }
+// .infomiddle{
+// 	margin-left:235px;
+// 	margin-top: 115px;
+// 	float:left;
+// }
+
+// .answers{
+// 	margin-top:200px;
+// }
+
+
+
+
+/*PHONE SIZE
+============================================================*/
+
+// @media only screen and (max-width:480px){
+
+// header{
+// 	background:url('../images/header.png') no-repeat center 100%;
+// 	height:358px;
+// 	margin:0 auto;
+// 	text-align:center;
+// }
+// .answers{
+// 	margin-top:100px;
+// }
+// .answers div{
+// 	float:left;
+// 	width:100%;
+// 	text-align:center;
+// }
+// .textwidth{
+// 	width:100%;
+// 	height:80px;
+// 	margin-left: auto;
+// 	margin-right: auto;
+// 	text-align:center;
+// 	clear:both;
+// }
+// .answers{
+// 	margin-top:300px;
+// }
+// .firstbluebar{
+// 	background-color:#6fcde3;
+// 	padding:50px 0 100px 0;
+// }
+// .Secondbluebar{
+// 	background-color:#a8dcd8;
+// 	padding:50px 0 100px 0;
+// }
+// .orangebar{
+// 	background-color:#f2852f;
+// 	padding:50px 0 100px ;
+// }
+// .circle{
+// 	float:left;
+// 	width:300px;
+// 	margin:0 2%;
+// 	background-color:#6fcde3;
+// 	padding:40px;
+// 	border:10px solid #f2852f;
+// 	border-radius:50%;
+// 	height:300px;
+// 	text-align:center;
+// 	display:inline;
+// }
+// .didyouknow .circle{
+// 	border-color:#a8dcd8;
+// }
+// .socailmedia{
+// 	list-style:none;
+// 	margin: 0;
+// 	padding:0;
+// }
+// .socialmedia a{
+// 	display:block;
+// }
+// .information{
+// 	vertical-align: middle;
+// 	text-align:center;
+//     left:10%;
+//     position:relative; /*makes left effective*/
+// }
+// .didyouknow{
+// 	vertical-align: middle;
+//     text-align:center;
+//     left:10%;
+//     position:relative; /*makes left effective*/
+
+
+// }
+// }
+
+/*TRANSITON TO TABLET
+=============================================================*/
+
+// @media (min-width:481px) and (max-width:767px){
+
+
+// header{
+
+// 	background:url('../images/header.png') no-repeat center 100%;
+// 	height:358px;
+// 	margin:0 auto;
+
+// }
+
+// .answers{
+// 	margin-top:100px;
+
+
+// }
+// .answers div{
+// 	float:left;
+// 	width:28%;
+// 	text-align:center;
+// 	margin:0 2%;
+// }
+// .textwidth{
+// 	width:100%;
+// 	height:80px;
+// 	margin-left: auto;
+// 	margin-right: auto;
+// 	text-align:center;
+// 	clear:both;
+// }
+// .answers{
+// 	margin-top:300px;
+// }
+// .firstbluebar{
+// 	background:#6fcde3 url('../images/balloons.png') no-repeat center 110px;
+// 	padding:50px 0 100px 0;
+// }
+// .Secondbluebar{
+// 	background:#a8dcd8 url('../images/cellphone.png') no-repeat center
+// 	 180px;
+// 	padding:50px 0 100px 0;
+
+// }
+
+// .orangebar{
+// 	background:#f2852f url('../images/thumbs.png') no-repeat center  110px;
+// 	padding:50px 0 100px ;
+// }
+// .circle {
+// 	float:left;
+// 	width:33%;
+// 	margin:0 2%;
+// 	background-color:#6fcde3;
+// 	padding:40px;
+// 	border:10px solid #f2852f;
+// 	border-radius:50%;
+// 	height:300px;
+// 	text-align:center;
+// 	display:inline;
+// }
+// .didyouknow .circle{
+// 	border-color:#a8dcd8;
+// }
+// .socailmedia{
+// 	list-style:none;
+// 	margin: 0;
+// 	padding:0;
+// }
+// .socialmedia a{
+// 		display:block;
+// }
+// .information{
+// 	vertical-align: middle;
+// 	text-align:center;
+//     left:10%;
+//     position:relative; /*makes left effective*/
+// }
+// .didyouknow{
+// 	vertical-align: middle;
+//     text-align:center;
+//     left:10%;
+//     position:relative; /*makes left effective*/
+// }
+
+// }
+
+/*TABLET SIZE
+==========================================================*/
+
+// @media (min-width:768px) and (max-width:959px){
+
+
+// header{
+// 	background:url('../images/header.png') no-repeat center 100%;
+// 	height:358px;
+// 	margin:0 auto;
+// }
+// .answers{
+// 	margin-top:200px;
+// }
+// .answers div {
+// 	float:left;
+// 	width:28%;
+// 	text-align:center;
+// 	margin:0 2%;
+// }
+// .textwidth {
+// 	width:100%;
+// 	height:80px;
+// 	margin-left: auto;
+// 	margin-right: auto;
+// 	text-align:center;
+// 	clear:both;
+// }
+// .answers{
+// 	margin-top:250px;
+// }
+// .firstbluebar{
+// 	background:#6fcde3 url('../images/balloons.png') no-repeat center 110px;
+// 	padding:50px 50px 100px 50px;
+// }
+// .Secondbluebar{
+// 	background:#a8dcd8 url('../images/cellphone.png') no-repeat center
+// 	 180px;
+// 	padding:50px 0 100px 0;
+
+// }
+
+// .orangebar{
+// 	background:#f2852f url('../images/thumbs.png') no-repeat center  110px;
+// 	padding:50px 0 100px ;
+// }
+// .circle{
+// 	float:left;
+// 	width:33%;
+// 	margin:0 2%;
+// 	background-color:#6fcde3;
+// 	padding:40px;
+// 	border:10px solid #f2852f;
+// 	border-radius:50%;
+// 	height:300px;
+// 	text-align:center;
+// 	display:inline;
+// }
+// .didyouknow .circle{
+// 	border-color:#a8dcd8;
+// }
+// .socailmedia{
+// 	list-style:none;
+// 	margin: 0;
+// 	padding:0;
+// }
+// .socialmedia a{
+// 		display:block;
+// }
+
+// }
+
+
+
+
+/* computer size
+=============================================================*/
+// @media (min-width:960px){
+
+// header{
+// 	background:url('../images/header.png') no-repeat center 100%;
+// 	height:358px;
+// 	margin:0 auto;
+// }
+// .answers{
+// 	margin-top:250px;
+// }
+// .answers div{
+// 	float:left;
+// 	width:28%;
+// 	text-align:center;
+// 	margin:0 2%;
+// }
+// .textwidth{
+// 	width:100%;
+// 	height:80px;
+// 	margin-left:70px;
+// 	text-align:center;
+// 	clear:both;
+// }
+// .firstbluebar{
+// 	background:#6fcde3 url('../images/balloons.png') no-repeat center 100px;
+// 	padding:20px 0 100px 0;
+// }
+
+// .Secondbluebar{
+// 	background:#a8dcd8 url('../images/cellphone.png') no-repeat center 100px;
+// 	padding:20px 0 100px 0;
+// }
+// .orangebar{
+// 	background:#f2852f url('../images/thumbs.png') no-repeat center 100px;
+// 	padding:20px 0 100px 0;
+// }
+// .circle{
+// 	float:left;
+// 	width:300px;
+// 	margin:0 10px;
+// 	background-color:#6fcde3;
+// 	padding:40px;
+// 	border:10px solid #f2852f;
+// 	border-radius:50%;
+// 	height:300px;
+// 	text-align:center;
+// 	display:inline;
+// }
+// .didyouknow .circle{
+// 	border-color:#a8dcd8;
+
+// }
+// .socailmedia{
+// 	list-style:none;
+// 	margin: 0;
+// 	padding:0;
+// }
+// .socialmedia a{
+// 		display:block;
+// }
+// .information{
+// 	vertical-align: middle;
+// 	text-align:center;
+//    position:relative; /*makes left effective*/
+// }
+// .didyouknow{
+// 	vertical-align: middle;
+//     text-align:center;
+//     position:relative; /*makes left effective*/
+// }
+// .circlestyle{
+// 	width:960px;
+// 	margin:0 auto;
+// }
+
+
+// }

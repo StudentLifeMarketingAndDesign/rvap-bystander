@@ -32,3 +32,48 @@ img.right {margin-left: 1em; margin-bottom: 1em;}
 .visuallyhidden { border: 0; clip: rect(0 0 0 0); height: 1px; margin: -1px; overflow: hidden; padding: 0; position: absolute; width: 1px;}
 .visuallyhidden.focusable:active,.visuallyhidden.focusable:focus { clip: auto; height: auto; margin: 0; overflow: visible; position: static; width: auto;}
 .invisible { visibility: hidden;}
+
+/* Justify
+========================================================================== */
+.justify {
+	font-size: 0.1px;
+	overflow: hidden;
+	text-align: justify;
+}
+.justify:after {
+	content: '';
+	display: inline-block;
+	width: 100%;
+}
+.justify-item {
+	font-size: $base-font-size;
+	vertical-align: top;
+	width: 100%;
+	text-align: left;
+	display: inline-block;
+}
+.justify-2 .justify-item {
+	@media screen and (min-width: $break-small) {
+	 width: 48%;
+	}
+}
+.justify-3 .justify-item {
+	@media screen and (min-width: $break-small) {
+	 width: 48%;
+	}
+	@media screen and (min-width: $break-medium) {
+	 width: 32%;
+	}
+}
+.justify-4 .justify-item {
+	@media screen and (min-width: $break-small) {
+	 width: 48%;
+	}
+	@media screen and (min-width: $break-medium) {
+	 width: 24%;
+	}
+}
+.justify .filler {
+	height: 0 !important;
+	margin: 0 !important;
+}

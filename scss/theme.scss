@@ -6,7 +6,7 @@ html {
 }
 body {
 	background: #fff url(../images/bg.png);
-	color: #444;
+	color: #333;
 	font-family: $body-font;
 	margin: 0;
 	padding: 0;
@@ -20,9 +20,7 @@ body {
 	margin-left: auto;
 	padding-left: 1em;
 	padding-right: 1em;
-	@media (min-width: $break-small) {
-		width: 448px;
-	}
+	position: relative;
 	@media (min-width: $break-medium) {
 		width: 736px;
 	}
@@ -31,18 +29,24 @@ body {
 	}
 }
 section {
-	padding: 50px 0;
+	padding: 60px 0;
 	@media (min-width: $break-medium) {
-		padding: 100px 0;
+		padding: 80px 0;
 	}
 }
 
 /* Header
 ========================================================================== */
+.logo {
+	display: block;
+	margin: 0 auto;
+	width: 100px;
+}
 .title {
 	color: $orange;
-	font-size: 40px;
-	margin: 0;
+	font-size: 65px;
+	margin: .5em 0 .5em 0;
+	text-align: center;
 	@media (min-width: $break-medium) {
 		font-size: 80px;
 	}
@@ -50,12 +54,20 @@ section {
 		font-size: 130px;
 	}
 }
+.title span {
+	display: block;
+}
 
 
 /* Navigation
 ========================================================================== */
 .main-nav {
-
+	display: none;
+	visibility: hidden;
+	@media (min-width: $break-medium) {
+		display: block;
+		visibility: visible;
+	}
 }
 .main-nav ul {
 	list-style:none;
@@ -78,26 +90,131 @@ section {
 ========================================================================== */
 .section-title {
 	font-size: 40px;
-	margin: 0 0 .5em;
+	margin: 0 0 1em;
 	text-align: center;
 	@media (min-width: $break-small) {
 		font-size: 50px;
 	}
 	@media (min-width: $break-medium) {
-		font-size: 60px;
+		font-size: 66px;
+		font-weight: normal;
 	}
+}
+.scenario {
+	position: relative;
+	background-position: center top;
+	background-repeat: repeat;
 }
 .scenario-1 {
 	background-color: #6fcde3;
+	@media (min-width: $break-large) {
+		background-image: url(../images/scenario-1-bg.png);
+	}
 }
 .scenario-2 {
 	background-color: #a8dcd8;
+	@media (min-width: $break-large) {
+		background-image: url(../images/scenario-2-bg.png);
+	}
 }
 .scenario-3 {
 	background-color: #f2852f;
+	@media (min-width: $break-large) {
+		background-image: url(../images/scenario-3-bg.png);
+	}
+}
+.arrow-left, .arrow-middle, .arrow-right {
+	position: absolute;
+}
+.arrow-left {
+	left: 160px;
+	top: 165px;
+}
+.arrow-middle {
+	left: 47%;
+	top: 165px;
+}
+.arrow-right {
+	right: 180px;
+	top: 165px;
 }
 
-/* Answers
+
+.answers {
+	background-color: #fff;
+	border-radius: 5px;
+	display: none;
+	font-size: 16px;
+	font-weight: bold;
+	border: 1px solid #666;
+	border: 1px solid rgba(0,0,0,.6);
+	@media (min-width: $break-small) {
+		display: block;
+		background-color: inherit;
+		border: none;
+	}
+	@media (min-width: $break-large) {
+		font-size: 21px;
+		margin-top: 6em;
+		line-height: 1.4;
+	}
+}
+.answers p {
+	border-bottom: 1px dashed #ccc;
+	margin: 0 0 5px 0;
+	padding: 13px 0;
+	&:last-child {
+		margin-bottom: 0;
+		border: none;
+	}
+	@media (min-width: $break-small) {
+		border: none;
+		float: left;
+		width: 29%;
+		margin: 0 2%;
+		text-align: center;
+	}
+	@media (min-width: $break-large) {
+		background: url(../images/highlight.png) no-repeat center bottom;
+		padding: 10px 0 20px;
+	}
+}
+.scenario-3 .answers p {
+	@media (min-width: $break-large) {
+		background-image: url(../images/highlight-black.png);
+	}
+}
+.answers .inner {
+	padding: 15px;
+	@media (min-width: $break-medium) {
+		padding: 0;
+	}
+}
+.show {
+	display: block;
+	text-align: center;
+	border: 1px solid #666;
+	border: 1px solid rgba(0,0,0,.6);
+	padding: 8px 5px;
+	color: #333;
+	box-shadow: 1px 1px 1px rgba(0,0,0,.2);
+	background-color: #fff;
+	border-radius: 5px;
+	position: relative;
+	&:hover, &:focus, &:active {
+		color: #333;
+		box-shadow: none;
+		left: 1px;
+		top: 1px;
+	}
+	@media (min-width: $break-small) {
+		display: none;
+	}
+}
+
+
+
+/* Circles
 ========================================================================== */
 .circle {
 	background-color: #6fcde3;
@@ -142,11 +259,46 @@ section {
 	padding: 0;
 }
 .circle a {
-	color: darken( $orange, 20% );
+	color: darken( #6fcde3, 40% );
 	text-decoration: underline;
 }
 .didyouknow .circle {
 	border-color: #a8dcd8;
+}
+.socialmedia li {
+
+	& img {
+		display: inline;
+		vertical-align: middle;
+		margin-right: 5px;
+	}
+	 & a {
+		xdisplay: block;
+	 }
+}
+@font-face {
+    font-family: 'iconies_socialregular';
+    src: url('../font/iconiessocial-webfont.eot');
+    src: url('../font/iconiessocial-webfont.eot?#iefix') format('embedded-opentype'),
+         url('../font/iconiessocial-webfont.woff') format('woff'),
+         url('../font/iconiessocial-webfont.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+
+}
+.social-icon {
+	color: #000;
+	font-family: 'iconies_socialregular';
+	font-size: 24px;
+	vertical-align: sub;
+}
+.footer {
+	background-color: #83c7bc;
+	font-size: 13px;
+	padding: 20px 0;
+	& p {
+		margin: 0;
+	}
 }
 
 

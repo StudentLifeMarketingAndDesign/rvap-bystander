@@ -39,7 +39,7 @@ section {
 ========================================================================== */
 .logo-container {
 	@media (min-width: $break-small) {
-		margin: 1em 0;
+		margin: 2em 0;
 	}
 }
 .logo {
@@ -63,12 +63,12 @@ section {
 .title {
 	color: $orange;
 	font-size: 65px;
-	margin: .5em 0 .5em 0;
+	margin: .2em 0 .5em 0;
 	text-align: center;
 	@media (min-width: $break-small) {
 		font-size: 70px;
 		text-align: left;
-		margin: 0 0 0 10px;
+		margin: 0 0 .3em 10px;
 	}
 	@media (min-width: $break-medium) {
 		font-size: 80px;
@@ -102,8 +102,10 @@ section {
 	margin-left: auto;
 	margin-right: auto;
 	padding:0;
-	display: table;
 	text-align: center;
+	@media (min-width: $break-large) {
+		display: table;
+	}
 }
 .main-nav ul li {
 	display: table-cell;
@@ -115,16 +117,30 @@ section {
 	font-size: 36px;
 	color: #333;
 	display: block;
-	width: 200px;
-	height: 100px;
-	-moz-border-radius: 100px / 50px;
-	-webkit-border-radius: 100px / 50px;
-	border-radius: 100px / 50px;
+
 	border-color: #6fcde3;
 	border-style: solid;
 	border-width: 6px 4px;
 	margin: 0 10px;
-	padding: 16px 5px 0;
+
+	@media (min-width: $break-small) {
+		font-size: 26px;
+		width: 150px;
+		height: 100px;
+		-moz-border-radius: 75px / 50px;
+		-webkit-border-radius: 75px / 50px;
+		border-radius: 75px / 50px;
+		padding: 25px 5px 0;
+	}
+	@media (min-width: $break-medium) {
+		font-size: 36px;
+		width: 200px;
+		height: 100px;
+		-moz-border-radius: 100px / 50px;
+		-webkit-border-radius: 100px / 50px;
+		border-radius: 100px / 50px;
+		padding: 16px 5px 0;
+	}
 }
 
 /* Scenarios
@@ -135,6 +151,7 @@ section {
 	text-align: center;
 	@media (min-width: $break-small) {
 		font-size: 50px;
+		margin-bottom: .35em;
 	}
 	@media (min-width: $break-medium) {
 		font-size: 66px;
@@ -148,42 +165,31 @@ section {
 }
 .scenario-1 {
 	background-color: #6fcde3;
+	@media (min-width: $break-medium) {
+		background-image: url(../images/scenario-1-md-bg.png);
+	}
 	@media (min-width: $break-large) {
 		background-image: url(../images/scenario-1-bg.png);
 	}
 }
 .scenario-2 {
 	background-color: #a8dcd8;
+	@media (min-width: $break-medium) {
+		background-image: url(../images/scenario-2-md-bg.png);
+	}
 	@media (min-width: $break-large) {
 		background-image: url(../images/scenario-2-bg.png);
 	}
 }
 .scenario-3 {
 	background-color: #f2852f;
+	@media (min-width: $break-medium) {
+		background-image: url(../images/scenario-3-md-bg.png);
+	}
 	@media (min-width: $break-large) {
 		background-image: url(../images/scenario-3-bg.png);
 	}
 }
-.arrow-left, .arrow-middle, .arrow-right {
-	display: none;
-	position: absolute;
-	@media (min-width: $break-medium) {
-		display: block;
-	}
-}
-.arrow-left {
-	left: 160px;
-	top: 165px;
-}
-.arrow-middle {
-	left: 47%;
-	top: 165px;
-}
-.arrow-right {
-	right: 180px;
-	top: 165px;
-}
-
 
 .answers {
 	background-color: #fff;
@@ -200,10 +206,10 @@ section {
 	}
 	@media (min-width: $break-large) {
 		font-size: 21px;
-		margin-top: 6em;
 		line-height: 1.4;
 	}
 }
+
 .answers p {
 	border-bottom: 1px dashed #ccc;
 	margin: 0 0 5px 0;
@@ -219,13 +225,13 @@ section {
 		margin: 0 2%;
 		text-align: center;
 	}
-	@media (min-width: $break-large) {
-		background: url(../images/highlight.png) no-repeat center bottom;
+	@media (min-width: $break-small) {
+		background: url(../images/highlight.png) no-repeat left bottom;
 		padding: 10px 0 20px;
 	}
 }
 .scenario-3 .answers p {
-	@media (min-width: $break-large) {
+	@media (min-width: $break-small) {
 		background-image: url(../images/highlight-black.png);
 	}
 }
@@ -257,6 +263,15 @@ section {
 	}
 }
 
+/* Arrows
+========================================================================== */
+.arrow-left, .arrow-middle, .arrow-right {
+	display: none;
+	@media (min-width: $break-small) {
+		display: block;
+		margin: 0 auto 10px auto;
+	}
+}
 
 
 /* Circles

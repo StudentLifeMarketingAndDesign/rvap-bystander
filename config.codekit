@@ -238,6 +238,28 @@
 		"outputPathIsSetByUser": 0,
 		"processed": 0
 		},
+	"\/images\/scenario-1-sm-bg.png": {
+		"fileType": 32768,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"initialSize": 7586,
+		"inputAbbreviatedPath": "\/images\/scenario-1-sm-bg.png",
+		"outputAbbreviatedPath": "\/images\/scenario-1-sm-bg.png",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"processed": 0
+		},
+	"\/images\/scenario-1-xs-bg.png": {
+		"fileType": 32768,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"initialSize": 7586,
+		"inputAbbreviatedPath": "\/images\/scenario-1-xs-bg.png",
+		"outputAbbreviatedPath": "\/images\/scenario-1-xs-bg.png",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"processed": 0
+		},
 	"\/images\/scenario-2-bg.png": {
 		"fileType": 32768,
 		"ignore": 0,
@@ -260,6 +282,28 @@
 		"outputPathIsSetByUser": 0,
 		"processed": 0
 		},
+	"\/images\/scenario-2-sm-bg.png": {
+		"fileType": 32768,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"initialSize": 11496,
+		"inputAbbreviatedPath": "\/images\/scenario-2-sm-bg.png",
+		"outputAbbreviatedPath": "\/images\/scenario-2-sm-bg.png",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"processed": 0
+		},
+	"\/images\/scenario-2-xs-bg.png": {
+		"fileType": 32768,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"initialSize": 11496,
+		"inputAbbreviatedPath": "\/images\/scenario-2-xs-bg.png",
+		"outputAbbreviatedPath": "\/images\/scenario-2-xs-bg.png",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"processed": 0
+		},
 	"\/images\/scenario-3-bg.png": {
 		"fileType": 32768,
 		"ignore": 0,
@@ -278,6 +322,17 @@
 		"initialSize": 8270,
 		"inputAbbreviatedPath": "\/images\/scenario-3-md-bg.png",
 		"outputAbbreviatedPath": "\/images\/scenario-3-md-bg.png",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"processed": 0
+		},
+	"\/images\/scenario-3-xs-bg.png": {
+		"fileType": 32768,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"initialSize": 6237,
+		"inputAbbreviatedPath": "\/images\/scenario-3-xs-bg.png",
+		"outputAbbreviatedPath": "\/images\/scenario-3-xs-bg.png",
 		"outputPathIsOutsideProject": 0,
 		"outputPathIsSetByUser": 0,
 		"processed": 0

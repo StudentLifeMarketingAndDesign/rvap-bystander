@@ -165,6 +165,10 @@ section {
 }
 .scenario-1 {
 	background-color: #6fcde3;
+	background-image: url(../images/scenario-1-xs-bg.png);
+	@media (min-width: $break-small) {
+		background-image: url(../images/scenario-1-sm-bg.png);
+	}
 	@media (min-width: $break-medium) {
 		background-image: url(../images/scenario-1-md-bg.png);
 	}
@@ -174,6 +178,10 @@ section {
 }
 .scenario-2 {
 	background-color: #a8dcd8;
+	background-image: url(../images/scenario-2-xs-bg.png);
+	@media (min-width: $break-small) {
+		background-image: url(../images/scenario-2-sm-bg.png);
+	}
 	@media (min-width: $break-medium) {
 		background-image: url(../images/scenario-2-md-bg.png);
 	}
@@ -183,6 +191,10 @@ section {
 }
 .scenario-3 {
 	background-color: #f2852f;
+	background-image: url(../images/scenario-3-xs-bg.png);
+	@media (min-width: $break-small) {
+		background-image: url(../images/scenario-3-sm-bg.png);
+	}
 	@media (min-width: $break-medium) {
 		background-image: url(../images/scenario-3-md-bg.png);
 	}

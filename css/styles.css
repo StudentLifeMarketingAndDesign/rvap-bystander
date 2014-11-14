@@ -764,7 +764,11 @@ section {
   background-repeat: repeat; }
 
 .scenario-1 {
-  background-color: #6fcde3; }
+  background-color: #6fcde3;
+  background-image: url(../images/scenario-1-xs-bg.png); }
+  @media (min-width: 480px) {
+    .scenario-1 {
+      background-image: url(../images/scenario-1-sm-bg.png); } }
   @media (min-width: 768px) {
     .scenario-1 {
       background-image: url(../images/scenario-1-md-bg.png); } }
@@ -773,7 +777,11 @@ section {
       background-image: url(../images/scenario-1-bg.png); } }
 
 .scenario-2 {
-  background-color: #a8dcd8; }
+  background-color: #a8dcd8;
+  background-image: url(../images/scenario-2-xs-bg.png); }
+  @media (min-width: 480px) {
+    .scenario-2 {
+      background-image: url(../images/scenario-2-sm-bg.png); } }
   @media (min-width: 768px) {
     .scenario-2 {
       background-image: url(../images/scenario-2-md-bg.png); } }
@@ -782,7 +790,11 @@ section {
       background-image: url(../images/scenario-2-bg.png); } }
 
 .scenario-3 {
-  background-color: #f2852f; }
+  background-color: #f2852f;
+  background-image: url(../images/scenario-3-xs-bg.png); }
+  @media (min-width: 480px) {
+    .scenario-3 {
+      background-image: url(../images/scenario-3-sm-bg.png); } }
   @media (min-width: 768px) {
     .scenario-3 {
       background-image: url(../images/scenario-3-md-bg.png); } }
